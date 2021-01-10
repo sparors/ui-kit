@@ -1,0 +1,29 @@
+{
+    "name": "sparors/ui-kit",
+    "description": "Bootstrap your hobby projects with ease",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Isaac Sai",
+            "email": "isaacsai030@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "illuminate/support": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sparors\\UiKit\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sparors\\UiKit\\UiKitServiceProvider"
+            ]
+        }
+    }
+}
