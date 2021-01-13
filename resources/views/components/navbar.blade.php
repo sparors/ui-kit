@@ -1,4 +1,4 @@
-@props(['logo', 'navigations', 'menu', 'menuIcon', 'heading'])
+@props(['logo', 'navigations', 'menu', 'menuIcon', 'heading', 'actions'])
 
 <div>
     <nav x-data="{ show: false }" class="bg-gray-800 w-full">
@@ -51,9 +51,12 @@
         </div>
     </nav>
     <header class="bg-white shadow w-full">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:flex md:items-center md:justify-between">
             <div class="py-4 font-semibold text-xl leading-tight tracking-wide text-gray-900">
                 {{ $heading }}
+            </div>
+            <div class="md:flex-shrink-0 flex items-center space-x-2 py-2">
+                {{ $actions ?? '' }}
             </div>
         </div>
     </header>
