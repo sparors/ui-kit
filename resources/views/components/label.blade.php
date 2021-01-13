@@ -1,3 +1,3 @@
 @props(['for'])
 
-<label for="{{ $for }}" {{ $attributes->merge(['class' => 'block text-gray-800 font-medium tracking-wide']) }}>{{ $slot->isNotEmpty() ? $slot : Str::of($for)->replace('_', ' ')->title() }}</label>
+<label for="{{ $for }}" {{ $attributes->merge(['class' => 'block text-gray-900 font-medium sm:text-sm']) }}>{{ $slot->isNotEmpty() ? $slot : Str::of($for)->replace('_', ' ')->title() }}</label>
